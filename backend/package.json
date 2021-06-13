@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg-promise": "^10.10.2",
+    "nodemon": "^2.0.7",
+    "serve": "^11.3.2"
+  },
+  
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

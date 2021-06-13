@@ -1,0 +1,9 @@
+.header {
+  background-color: #f2f2f2;
+  border-bottom: #ff5c0f 15px ridge;
+  display: flex;
+  justify-content: center;
+  font-family: Sans-Serif;
+  width: 100vw;
+  height: 130px;
+};
