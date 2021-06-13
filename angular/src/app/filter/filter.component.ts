@@ -12,11 +12,7 @@ import { Interface } from '../interface';
 })
 export class FilterComponent implements OnInit {
   myControl = new FormControl();
-<<<<<<< HEAD
   options: any[] = [];
-=======
-  options: string[] = ['One', 'Two', 'Three'];
->>>>>>> 4e57567c3cf47a246c35d00aeb4cad172492f0ef
 
   filteredOptions: Observable<string[]>;
 
