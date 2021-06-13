@@ -5,8 +5,8 @@
       [matAutocomplete]="auto"><a><button class="fa-fa-search" id="search-button"
           routerLink="/results">search</button></a>
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-      <mat-option *ngFor="let option of options " [value]="option">
-        {{option}}
+      <mat-option *ngFor="let option of options " [value]="option.id">
+        {{option.name}}
       </mat-option>
     </mat-autocomplete>
     <a class="search-button" routerLink="/results"><button class="searchbutton">Search</button></a>

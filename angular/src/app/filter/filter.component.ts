@@ -14,7 +14,7 @@ export class FilterComponent implements OnInit {
   myControl = new FormControl();
   options: any[] = [];
 
-  filteredOptions: Observable<string[]>;
+
 
   constructor(private api: ApiService) {}
 
