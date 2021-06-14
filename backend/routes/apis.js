@@ -178,10 +178,19 @@ routes.post('/apis', async (req, res) => {
 * @swagger
 * /apis/{id}:
 *   delete:
-*     description: This request will return ALL apis and apis by category
+*     description: This request will allow you to delete an api based on id
+*     parameters:
+*       - name: id
+*         in: path
+*         required: true
+*         description: The api id that you wish delete
+*         schema:
+*           type : integer
+*           format: int32
+*           minimum: 1
 *     responses:
 *       204:
-*         description: Returns a mysterious string.
+*         description: Deletes api
 */
 routes.delete('/apis/:id', async (req, res) => {
  
