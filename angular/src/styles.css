@@ -1,3 +1,4 @@
+/* mobile-first */ 
 * {
   margin: 0;
   padding: 0;
@@ -21,3 +22,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media only screen and (min-width: 600px){
+  /*for tablets*/ 
+
+}
+
+@media only screen and (min-width: 768px){
+/*For desktop*/ 
+}
+
+@media only screen and (min-width: 992px) {
+  /*for larger devices*/
+}
+
+
