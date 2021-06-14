@@ -31,7 +31,7 @@ routes.get('/apis', async (req, res) => {
 
 /**
 * @swagger
-* /apis/:id
+* /apis/{id}:
 *   get:
 *     description: This request will return ALL apis and apis by category
 *     responses:
@@ -52,7 +52,7 @@ routes.get('/apis/:id', async (req, res) => {
 
 /**
 * @swagger
-* /apis/:id:
+* /apis/{id}:
 *   put:
 *     description: This request will return ALL apis and apis by category
 *     responses:
@@ -151,14 +151,14 @@ routes.put('/apis/:id', async (req, res) => {
     }),
 
 
-/**
+  /**
 * @swagger
-* /apis/:id:
+* /apis/{id};
 *   delete:
 *     description: This request will return ALL apis and apis by category
 *     responses:
-*       200:
-*         description: Returns a mysterious string.
+*       204:
+*         description: Deletes selected content.
 */
 
     routes.delete('/apis/:id', async (req, res) => {
