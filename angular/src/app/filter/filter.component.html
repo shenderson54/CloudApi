@@ -1,14 +1,14 @@
 <form class="search-bar">
   <mat-form-field class="filters">
     <mat-label></mat-label>
-    <input id='input-field' type="text" placeholder="Search Here" aria-label="Apis" matInput [formControl]="myControl"
-      [matAutocomplete]="auto"><a><button class="fa-fa-search" id="search-button"
-          routerLink="/results">search</button></a>
+    <input [(ngModel)]="options" id='input-field' type="text" placeholder="Search Here" aria-label="Apis" matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"><a><button class="fa-fa-search"
+          id="search-button">search</button></a>
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
       <mat-option *ngFor="let option of options " [value]="option.id">
         {{option.name}}
       </mat-option>
     </mat-autocomplete>
-    <a class="search-button" routerLink="/results"><button class="searchbutton">Search</button></a>
   </mat-form-field>
 </form>
