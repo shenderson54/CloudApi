@@ -75,3 +75,6 @@ INSERT INTO public.apis VALUES (67, 'markerapi', 'Trademark Search', 'https://ma
 INSERT INTO public.apis VALUES (68, 'SwiftKanban', 'Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput & Productivity', 'https://www.digite.com/swiftkanban/', 'Business', true, NULL);
 INSERT INTO public.apis VALUES (69, 'Ticksel', 'Friendly website analytics made for humans', 'https://www.ticksel.com/', 'Business', false, NULL);
 INSERT INTO public.apis VALUES (70, 'Trello', 'Boards, lists and cards to help you organize and prioritize your projects', 'https://developer.atlassian.com/cloud/trello/', 'Business', true, NULL);
+
+
+SELECT setval('apis_id_seq', 70, true);

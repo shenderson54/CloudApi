@@ -5,6 +5,15 @@ const db = pgp({
     database: 'final'
 });
 
+/**
+* @swagger
+* /apis:
+*   get:
+*     description: This request will return ALL apis and apis by category
+*     responses:
+*       200:
+*         description: Returns an array of APIs.
+*/
 
 routes.get('/apis', async (req, res) => {
     if (req.query.category) {
@@ -19,6 +28,17 @@ routes.get('/apis', async (req, res) => {
 
 });
 
+
+/**
+* @swagger
+* /apis/:id
+*   get:
+*     description: This request will return ALL apis and apis by category
+*     responses:
+*       200:
+*         description: Returns an array of APIs.
+*/
+
 routes.get('/apis/:id', async (req, res) => {
     const api = await db.oneOrNone('SELECT * FROM apis WHERE id = $(id)', {
         id: +req.params.id
@@ -30,7 +50,15 @@ routes.get('/apis/:id', async (req, res) => {
 
 });
 
-
+/**
+* @swagger
+* /apis/:id:
+*   put:
+*     description: This request will return ALL apis and apis by category
+*     responses:
+*       200:
+*         description: Updates an existing API
+*/
 routes.put('/apis/:id', async (req, res) => {
 
     const idExists = await db.oneOrNone('SELECT id from apis WHERE id = $(id)', {
@@ -70,6 +98,34 @@ routes.put('/apis/:id', async (req, res) => {
 
 
 
+/**
+* @swagger
+* /apis:
+*   post:
+*     description: This request will return ALL apis and apis by category
+*     requestBody:
+*      required: true
+*      content:
+*        application/json:
+*          schema:
+*            type: object
+*            properties:
+*              name:
+*                type: string
+*              category:
+*                type: string
+*              url:
+*                type: string
+*              description:
+*                type: string
+*              auth:
+*                type: boolean
+*              cors:
+*                type: boolean
+*     responses:
+*       201:
+*         description: Adds API
+*/
 
     routes.post('/apis', async (req, res) => {
         try {
@@ -95,6 +151,15 @@ routes.put('/apis/:id', async (req, res) => {
     }),
 
 
+/**
+* @swagger
+* /apis/:id:
+*   delete:
+*     description: This request will return ALL apis and apis by category
+*     responses:
+*       200:
+*         description: Returns a mysterious string.
+*/
 
     routes.delete('/apis/:id', async (req, res) => {
 
