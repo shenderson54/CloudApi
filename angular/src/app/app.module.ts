@@ -17,8 +17,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FilterComponent } from './filter/filter.component';
 import { PracticeComponent } from './practice/practice.component';
 import { ResultsComponent } from './results/results.component';
-
-
+import { MatTableModule } from '@angular/material/table';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { ResultsComponent } from './results/results.component';
     PageFooterComponent,
     FilterComponent,
     PracticeComponent,
-    ResultsComponent
+    ResultsComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -43,6 +44,7 @@ import { ResultsComponent } from './results/results.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

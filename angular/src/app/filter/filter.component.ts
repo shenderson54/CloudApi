@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { ApiService } from '../api.service';
 import { Interface } from '../interface';
+import { SearchFilterPipe } from '../search-filter.pipe';
 
 @Component({
   selector: 'app-filter',
@@ -12,16 +13,16 @@ import { Interface } from '../interface';
 })
 export class FilterComponent implements OnInit {
   myControl = new FormControl();
-  options: any[] = [];
-
-
+  options: string[] = ['animals', 'anime', 'business','anti-malware','art & design','books' ];
+  apis: any[] = [];
+  displayedColumns: string[] = ['id', 'name', 'description', 'url', 'category', 'auth', 'cors'];
 
   constructor(private api: ApiService) {}
 
   results: Interface[] | null = null;
   ngOnInit() {
     this.api.searchAPIS('').subscribe(results => {
-      this.options = results;
+      this.apis = results;
       console.log(results);
     })
     
