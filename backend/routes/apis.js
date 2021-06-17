@@ -29,7 +29,7 @@ routes.get('/apis', async (req, res) => {
 
 /**
 * @swagger
-* /apis/:id:
+* /apis/{id}:
 *   get:
 *     description: This request will return ALL apis and apis by category
 *     responses:

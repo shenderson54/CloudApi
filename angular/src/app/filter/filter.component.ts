@@ -29,9 +29,9 @@ export class FilterComponent implements OnInit {
   }
   
 
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
+  // private _filter(value: string): string[] {
+  //   const filterValue = value.toLowerCase();
 
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
-  }
+  //   return this.options.filter(option => option.toLowerCase().includes(filterValue));
+  // }
 }
