@@ -4,6 +4,32 @@
   display: flex;
   justify-content: center;
   font-family: Sans-Serif;
-  width: 100vw;
-  height: 130px;
+  padding-top: 3px;
 };
+
+.header-img {
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 75px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100px;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .header {
+    height: 130px;
+  }
+
+}
