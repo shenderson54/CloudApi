@@ -7,23 +7,34 @@
 } */
 
 
-.filters{
+/* .filters{
   width: 100%;
-}
+} */
 
-input{ 
+/* input{ 
   border: 1px solid black;
-  /* border-radius: 15px; */
+  border-radius: 15px; 
   column-rule-style: groove;
   height:20px;
   width: 200px;
-}
+} */
 
 
-.search-button{
+/* .search-button{
   background-color: black;
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
+
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  
 
 }

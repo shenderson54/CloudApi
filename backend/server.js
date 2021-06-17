@@ -24,5 +24,10 @@ const options = {
 
 
 const swaggerSpec = swaggerJsdoc(options);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(null, {
+   swaggerOptions: {
+       url: "/v1/swagger.json",
+   }
+}));
+app.get("/v1/swagger.json", (req, res) => res.json(swaggerSpec));
 app.listen(port, () => console.log(`Running the best code on port: ${port}.`));
