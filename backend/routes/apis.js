@@ -106,7 +106,7 @@ routes.get('/apis/:id', async (req, res) => {
         cors = $(cors)
         WHERE id = $(id)
         `, {
-  
+
         id: +req.params.id,
         name: req.body.name,
         description: req.body.description,
@@ -174,7 +174,7 @@ routes.post('/apis', async (req, res) => {
     }
 }),
 
-/**
+  /**
 * @swagger
 * /apis/{id}:
 *   delete:

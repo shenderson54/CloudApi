@@ -2,33 +2,47 @@
     width: 20px;
     padding: 50px;
     border-radius: 20%;
-};
-
-* {
-    padding: 0;
+ };
+ *{
     margin: 0;
-}
-
-h2 {
+    padding: 0;
+    /* needed to keep h1 centered*/
+ }
+  
+ h1{
     text-align: center;
-}
-
-.bold {
+ }
+ h2 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0;
+ }
+ body{
+    margin: 70px;
+    padding: 20px;
+    font-size: large;
+ }
+ li{
+ margin-left: 35px;
+ }
+  
+ .bold {
     font-weight: bold;
-}
-
-.home-page-image {
+ }
+  
+ .home-page-image {
     width: 100%;
-}
-
-.divider {
+ }
+  
+ .divider {
     display: flex;
     align-items: center;
     border-bottom: 1px solid grey;
     width: 100%;
-}
-
-#picture-label {
+ }
+  
+ #picture-label {
     text-align: center;
-    
-}
+   
+ }
+ 
