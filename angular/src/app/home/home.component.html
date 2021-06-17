@@ -1,35 +1,19 @@
 <app-page-header> </app-page-header>
  
 <body>
-  <app-filter></app-filter>
    <!-- <a><button class="fa-fa-search" id="search-button" routerLink="/results">search</button></a>
    <input id='input-field' type="text" placeholder="Search Here" aria-label="Apis" button class="fa-fa-search"
      id="search-button" routerLink="/results"> -->
-  <h1>Build Amazing Things </h1> 
-    <br />
-  <h1>with APIs</h1>
-  <h4>Practice using APIs to build full stack apps today</h4>
+    <h1>Build Amazing Things With APIs</h1>
+     <app-filter></app-filter>
+  <div id="h4-style">
+  <h4>Learn about APIs today...</h4> 
+  <h4>Build great websites tomorrow!</h4>
+  </div>
  
-    <div class="button">
-    
-    <button class="misc-buttons" id="about-button" routerLink="/about">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      About
-    </button>
-
-
-    <button class="misc-buttons" routerLink="/practice">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Practice
-    </button>
+<div class="button">
+    <button class="misc-buttons" id="about-button" routerLink="/about">About</button>
+    <button class="misc-buttons" onclick="parent.open(`http://localhost:3000/api-docs`)">Get Started</button>
 </div>
-
 </body>
-
 <app-page-footer></app-page-footer>
