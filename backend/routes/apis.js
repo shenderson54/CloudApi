@@ -9,7 +9,7 @@ const db = pgp({
 * @swagger
 * /apis:
 *   get:
-*     description: This request will return ALL apis and apis by category
+*     description: This request will return ALL apis and apis by category.
 *     responses:
 *       200:
 *         description: Returns an array of APIs.
@@ -29,12 +29,12 @@ routes.get('/apis', async (req, res) => {
 
 /**
 * @swagger
-* /apis/:id:
+* /apis/{id}:
 *   get:
-*     description: This request will return ALL apis and apis by category
+*     description: This request will return an API by ID.
 *     responses:
 *       200:
-*         description: Returns a mysterious string.
+*         description: Successfully Retrieved API by ID.
 */
 routes.get('/apis/:id', async (req, res) => {
     const api = await db.oneOrNone('SELECT * FROM apis WHERE id = $(id)', {
@@ -52,19 +52,19 @@ routes.get('/apis/:id', async (req, res) => {
 * @swagger
 * /apis/{id}:
 *   put:
-*     description: This request will allow you to update an api by id
+*     description: This request will allow you to update an API by ID
 *     parameters:
 *       - name: id
 *         in: path
 *         required: true
-*         description: The api id that you wish update
+*         description:
 *         schema:
 *           type : integer
 *           format: int32
 *           minimum: 1
 *     requestBody:
 *      required: true
-*      content:
+*      content: 
 *        application/json:
 *          schema:
 *            type: object
@@ -135,6 +135,8 @@ routes.get('/apis/:id', async (req, res) => {
 *          schema:
 *            type: object
 *            properties:
+*              id:
+*                type: integer
 *              name:
 *                type: string
 *              category:
@@ -183,14 +185,14 @@ routes.post('/apis', async (req, res) => {
 *       - name: id
 *         in: path
 *         required: true
-*         description: The api id that you wish delete
+*         description: API has been Deleted.
 *         schema:
 *           type : integer
 *           format: int32
 *           minimum: 1
 *     responses:
 *       204:
-*         description: Deletes api
+*         description: Deletes API.
 */
 routes.delete('/apis/:id', async (req, res) => {
  
