@@ -1,8 +1,8 @@
-<form class="search-bar">
+<body>
+<!-- <form class="search-bar">
   <mat-form-field class="filters">
     
     <mat-label></mat-label>
-    <input name="search" type="text" placeholder="Search by Category" aria-label="Apis" matInput
       [formControl]="myControl"
       [matAutocomplete]="auto">
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
@@ -11,6 +11,7 @@
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
+
   <button class="search-bar-button" (click)= "search()">Search</button>
 </form>
 
@@ -67,3 +68,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 </div>
+</body>
