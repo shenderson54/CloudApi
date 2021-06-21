@@ -1,18 +1,19 @@
-<form class="search-bar">
+<body>
+<!-- <form class="search-bar">
   <mat-form-field class="filters">
     <mat-label></mat-label>
 
-    <!-- <input type="text" placeholder="Search Here" aria-label="Apis" matInput
+    <input type="text" placeholder="Search Here" aria-label="Apis" matInput
       [formControl]="myControl"
-      [matAutocomplete]="auto"> -->
+      [matAutocomplete]="auto">
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
       <mat-option *ngFor="let option of options " | searchFilter [value]="option">
         {{option}}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
-  <!-- <button class="fa-fa-search" id="search-button">search</button> -->
-</form>
+  <button class="fa-fa-search" id="search-button">search</button>
+</form> -->
 
 <div id='resultsTable'>
 <table mat-table [dataSource]="apis" class="mat-elevation-z8" *ngIf='options'>
@@ -67,3 +68,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 </div>
+</body>
