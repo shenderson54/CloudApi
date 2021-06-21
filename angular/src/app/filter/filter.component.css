@@ -1,11 +1,11 @@
-/* .search-bar{
-  
-  width: 100%;
-  background-color: #f2f2f2;
-  margin-top: 40px;
-  margin-left: 35%;
-} */
 
+.search-bar{
+  margin-top: 40px;
+  margin-left: 250px; 
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
+}
 
 /* .filters{
   width: 100%;
@@ -28,13 +28,33 @@
 
 } */
 
+
 * {
   padding: 0;
   margin: 0;
 }
 
+
+body {
+  height: 100em;
+}
+=======
+.mat-table {
+  margin-left: 150px;
+  margin-top: 50px;
+
+}
+
 @media (max-width: 768px) {
 
-  
 
+td {
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  table {
+    max-width: 500px;
+    overflow-x: hidden;
+  }
 }

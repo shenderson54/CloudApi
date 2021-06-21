@@ -6,6 +6,9 @@
 
 /* #f2f2f2 , #ff5c0f, #20a8b4 */
 
+
+
+
 .home_logo{
   position: relative;
   display: flex;
@@ -16,7 +19,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px;
+  margin: 60px;
 } 
 
 h4 {
@@ -49,9 +52,18 @@ h4 {
   margin-bottom: 45px;
 }   */
 
+#spacer {
+  margin: 60px;
+  width: 100%;
+  display: none;
+}
 
 
 @media only screen and (max-width: 768px) {
+
+  body {
+    margin: 1em;
+  }
 
   .button {
     display: flex;
