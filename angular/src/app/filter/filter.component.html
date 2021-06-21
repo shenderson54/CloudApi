@@ -1,21 +1,21 @@
 <form class="search-bar">
   <mat-form-field class="filters">
+    
     <mat-label></mat-label>
-
-    <!-- <input type="text" placeholder="Search Here" aria-label="Apis" matInput
+    <input name="search" type="text" placeholder="Search by Category" aria-label="Apis" matInput
       [formControl]="myControl"
-      [matAutocomplete]="auto"> -->
+      [matAutocomplete]="auto">
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
       <mat-option *ngFor="let option of options " | searchFilter [value]="option">
         {{option}}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
-  <!-- <button class="fa-fa-search" id="search-button">search</button> -->
+  <button class="search-bar-button" (click)= "search()">Search</button>
 </form>
 
 <div id='resultsTable'>
-<table mat-table [dataSource]="apis" class="mat-elevation-z8" *ngIf='options'>
+<table mat-table [dataSource]="apis|async" class="mat-elevation-z8" *ngIf='options'>
 
   <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->

@@ -14,24 +14,26 @@ import { SearchFilterPipe } from '../search-filter.pipe';
 export class FilterComponent implements OnInit {
   myControl = new FormControl();
   options: string[] = ['animals', 'anime', 'business','anti-malware','art & design','books' ];
-  apis: any[] = [];
+  apis: Observable<any> | null = null;
   displayedColumns: string[] = ['id', 'name', 'description', 'url', 'category', 'auth', 'cors'];
 
   constructor(private api: ApiService) {}
 
   results: Interface[] | null = null;
   ngOnInit() {
-    this.api.searchAPIS('').subscribe(results => {
-      this.apis = results;
-      console.log(results);
-    })
+    this.apis = this.api.searchAPIS('')
     
   }
-  
+  search() {
+    console.log(this.myControl.value)
+    this.apis = this.api.searchAPIS('').pipe(map(apis => {
+      return apis.filter(api => {
+        return api.category.toLowerCase() === this.myControl.value.toLowerCase();
 
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
-
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+      })
+    }))
+    
   }
+
+
 }
