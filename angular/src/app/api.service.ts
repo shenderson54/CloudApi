@@ -8,13 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  apiUrl: string = 'http://localhost:3000/apis'; // this returns all APIs with category search term
-  idUrl: string = 'http://localhost:3000/apis/:id';
-  categoryUrl: string = 'http://localhost:3000/apis/:category';
-  updateUrl: string = 'http://localhost:3000/apis/:id';
-  postUrl: string = 'http://localhost:3000/apis';
-  deleteUrl: string = 'http://localhost:3000/apis/:id';
-  nameURL: string = 'http://localhost:3000/apis/:name';
+  apiUrl: string = 'https://cloud---api.herokuapp.com/apis'; // this returns all APIs with category search term
+  idUrl: string = 'https://cloud---api.herokuapp.com/apis/:id';
+  categoryUrl: string = 'https://cloud---api.herokuapp.com/apis/:category';
+  updateUrl: string = 'https://cloud---api.herokuapp.com/apis/:id';
+  postUrl: string = 'https://cloud---api.herokuapp.com/apis';
+  deleteUrl: string = 'https//cloud---api.herokuapp.com/apis/:id';
+  nameURL: string = 'https://cloud---api.herokuapp.com/apis/:name';
 
   
   constructor(private http: HttpClient) {}

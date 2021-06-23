@@ -55,12 +55,7 @@
   width: 0.35em;
   height: 0.08em;
   transform: rotate(45deg);
-
 }
-
-
-
-
 
 body {
   height: 100em;
@@ -74,15 +69,13 @@ body {
 
 @media (max-width: 768px) {
 
-
 td {
   font-size: 11px;
 }
 
-@media (max-width: 768px) {
   table {
     max-width: 500px;
     overflow-x: hidden;
   }
 }
-}
+

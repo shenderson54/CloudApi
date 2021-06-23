@@ -32,16 +32,17 @@ h4 {
 }
 
 
+
 .misc-buttons {
   border: 2px solid rgb(92, 83, 83);
   position: relative;
   background: linear-gradient(90deg, transparent, #ffffff);
-  overflow: hidden;
-  filter: hue-rotate(0deg);
-  transition: all 0.1s linear;
-  border-radius: 4px;
-  cursor: pointer;
-}
+   overflow: hidden; 
+   filter: hue-rotate(0deg); 
+   transition: all 0.1s linear; 
+   border-radius: 4px; 
+   cursor: pointer; 
+} 
 
 /* #search-button{
   background-color: black;
@@ -70,6 +71,8 @@ div{
   .button {
     display: flex;
     flex-direction: column;
+    
+    
   }
 
   .misc-buttons {

@@ -18,6 +18,8 @@ import { FilterComponent } from './filter/filter.component';
 import { ResultsComponent } from './results/results.component';
 import { MatTableModule } from '@angular/material/table';
 import { SearchFilterPipe } from './search-filter.pipe';
+// import { MatToolbarModule } from '@angular/material/toolbar';
+// import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { SearchFilterPipe } from './search-filter.pipe';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    // MatToolbarModule,
+    // MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
