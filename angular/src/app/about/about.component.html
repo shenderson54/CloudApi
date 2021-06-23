@@ -1,91 +1,88 @@
 <app-page-header> </app-page-header>
-
 <body>
-
 <section class="section">
-    <h1> API Overview </h1>
-    <p>
-        API is the acronym for <span class='bold'>Application Programming Interface,</span>  which is a remote server that our Javascript code can communicate with to usually pull in data from the database. Once the browser sends a request to the server, unless the internet is not functional, the response will always come back from the server. An API allows a user to sort through data in the most efficient way possible, as well as updating, adding, and deleting data, this makes it simple to pull only the information that we requested onto the webpage.
-    </p>
-    <!-- add an image & make mobile responsive -->
+  <h1> API Overview </h1>
+  <p>
+      API is the acronym for <span class='bold'>Application Programming Interface,</span>  which is a remote server that our Javascript code can communicate with to usually pull in data from the database. Once the browser sends a request to the server, unless the internet is not functional, the response will always come back from the server. An API allows a user to sort through data in the most efficient way possible, as well as updating, adding, and deleting data, this makes it simple to pull only the information that we requested onto the webpage.
+  </p>
+      <!-- add an image & make mobile responsive -->
 </section>
 <div class="divider"> </div>
 <section class="section">
-    <h2>How We Use APIs Everyday</h2>
-        <p>Summary <!--UPDATE KaylaT--> </p>
-        <div>
-        <ul> 
-            <li> <!--Example 1 --> </li> 
-            <li><!--Insert image tag with example--></li> 
-            <li> <!--Example 2 --> </li> 
-            <li> <!--Insert image tag --> </li>
-        </ul> 
-    </div>
+  <h2>How APIs Are Used Everyday</h2>
+      <p> APIs play a huge role in our everyday life since they allow us to easily share important data. An API functions like a middleman (a virtual one, of course) as it relays information from one interface, like a website or mobile app. </p>
+      <ul>
+          <li> Paying with PayPal </li>
+          <!--Insert image tag with example-->
+          <li> Streaming services like Netflix and spotify allow users to search through different types of music and movies using Apis </li>
+          <!--Insert image tag with example-->
+          <li> Using Google Maps in a rideshare app </li>
+          <!--Insert image tag with example-->
+          <li> Logging to websites using other social sites </li>
+          <!--Insert image tag with example-->
+          <li> Weather Data </li>
+          <!--Insert image tag with example-->
+          <li> Twitter Bots </li>
+          <!--Insert image tag with example-->
+          <li> Embedding youtube videos into a webpage </li>
+          <!--Insert image tag with example-->
+          <li> Tesla, yes the electric car company, they send software updates for the vehicles via APIs </li>
+          <!--Insert image tag with example-->
+      </ul>
+</section>
+<div class="divider"> </div>
+ <section class="section">
+  <h2> Identifying Good APIs </h2>
+  <p>
+      APIs are the first way developers access and interact with your products. A good API will enhance the user's experience, providing complete, accurate, and easy to read documentation. Another good quality of an API is great error handling, it is important that an application provides the specific error code and human readable message in order to provide as much help to the developer so they can fix the issue. Lastly, a great API is one that can be equally gentle with students in this program while empowering experienced users. Check out the API database on the homepage to find a great API for your next project!
+  </p>
+  <!-- add example of a amazing API, all of the APIs they can search through are amazingly selected by us.-->
 </section>
 <div class="divider"> </div>
 <section class="section">
-    <h2> Identifying Good APIs </h2>
-    <p>
-        APIs are the first way developers access and interact with your products. A good API will enhance the user's experience, providing complete, accurate, and easy to read documentation. Another good quality of an API is great error handling, it is important that an application provides the specific error code and human readable message in order to provide as much help to the developer so they can fix the issue. Lastly, a great API is one that can be equally gentle with students in this program while empowering experienced users. Check out the API database on the homepage to find a great API for your next project!
-    </p>
-    <!-- add example of a amazing API -->
+  <h2> Types of API’s </h2>
+  <p>
+      There are four basic types of APIs:
+  </p>
+       <ul> <!--Add updated definition from doc -->
+          <li><span class='bold'>Private APIs</span> are published internally for use by developers to improve its products and services. Private APIs are not exposed to third parties. </li>
+          <li><span class='bold'>Public APIs</span> are published publicly and can be used by any third party. There are no restrictions on these APIs.</li>
+          <li><span class='bold'>Partner APIs</span> can only be used by specific parties with whom the owner agrees to share data. Partner APIs are used within business relationships, often to integrate software between partnering companies. </li>
+          <li><span class='bold'>Composite APIs</span> combine multiple APIs to address related or interdependent tasks, and often improve speed and performance compared with individual APIs.</li>
+      </ul>
+</section>
+<div class="divider"> </div>
+ <section class="section">
+  <h2> The Makeup Of An API </h2>
+   <p> So far we have learned that an API is how interfaces communicate with each other, but how does that communication take place? </p>
+   <p>APIs consist of three parts: </p>
+      <ul>
+          <li> User: the person executing the request </li>
+          <li> Client: the interface that sends the request to the server </li>
+          <li> Server: the interface that responds to the request </li>
+      </ul>
 </section>
 <div class="divider"> </div>
 <section class="section">
-    <h2> Types of API’s </h2>
-    <p>
-        There are four basic types of APIs:
-    </p>
-    <div>
-         <ul> <!--Add updated definition from doc -->
-            <li><span class='bold'>Private APIs</span> are published internally for use by developers to improve its products and services. Private APIs are not exposed to third parties. </li>
-            <li><span class='bold'>Public APIs</span> are published publicly and can be used by any third party. There are no restrictions on these APIs.</li>
-            <li><span class='bold'>Partner APIs</span> can only be used by specific parties with whom the owner agrees to share data. Partner APIs are used within business relationships, often to integrate software between partnering companies. </li>
-            <li><span class='bold'>Composite APIs</span> combine multiple APIs to address related or interdependent tasks, and often improve speed and performance compared with individual APIs.</li>
-        </ul>
-    </div>
+  <h2> Actions You Can Take Through An API </h2>
+      <p> Similar to this web application created, a server will be built first to hold the data. Once the server is running a developer can use the endpoints created by the programmer to filter or search the data on the server, or build their own program that runs searches on the database. If you haven't realized it yet, you can build amazing things with APIs. However, before you jump right into to using APIs, it would be great to know the 4 types of actions an API can take: </p>
+      <ul>
+          <li>GET: requests data from a server. This request can result in displaying all the data or specific to one single type of information depending on what the user would like to "GET" from the server. </li>
+          <li>POST: sends changes from the client to the server. This request is used to add new information to the server. </li>
+          <li>PUT: updates existing information. This request is used to revise or change any existing data on the server. </li>
+          <li>DELETE: deletes existing information. This request results in existing information on the server being deleted. </li>
+      </ul>
 </section>
-<div class="divider"> </div>
-<section class="section">
-    <h2> API Examples  </h2>
-     <p> Summary <!--UPDATE KaylaT--> </p>
-     <div>
-        <ul> 
-            <li> <!--Example 1 --> </li> 
-            <li><!--Insert image tag with example--></li> 
-            <li> <!--Example 2 --> </li> 
-            <li> <!--Insert image tag --> </li>
-        </ul>
-    </div>
-</section>
-<div class="divider"> </div>
-<section class="section">
-    <h2> Important Things to Remember </h2>
-     <p> Summary <!--UPDATE KaylaT--> </p>
-     <div>
-        <ul> 
-            <li> <!--Example 1 --> </li> 
-            <li><!--Insert image tag with example--></li> 
-            <li> <!--Example 2 --> </li> 
-            <li> <!--Insert image tag for example--> </li>
-            <!-- 6 example Max-->
-        </ul>
-    </div>
-</section>
-<button> </button>
-<div class="divider"> </div>
-<section class="bottom">
-    <h2> Checkout These Videos To Learn More </h2>
-     <p> Summary <!--UPDATE KaylaT--> </p>
-     <div>
-        <ul> 
-            <li> <!--Example 1 --> </li> 
-            <li><!--Insert image tag with example--></li> 
-            <li> <!--Example 2 --> </li> 
-            <li><!--Insert image tag with example--></li>
-        </ul>
-    </div>
-</section>
-<app-page-footer></app-page-footer>
+<!-- <div class="divider"> </div> 
+ <section class="bottom">
+  <h2> Checkout These Videos To Learn More </h2>
+   <p>  </p>
+   <div>
+      <ul>
+          <li>  </li>
+          <li>></li>
+          <li>  </li>
+          <li>></li>
+      </ul>
+  </div> -->
 </body>
-
