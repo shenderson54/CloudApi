@@ -57,7 +57,9 @@ h4 {
   width: 100%;
   display: none;
 }
-
+div{ 
+  margin: 30px;
+}
 
 @media only screen and (max-width: 768px) {
 
