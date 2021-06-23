@@ -1,0 +1,22 @@
+{
+  "name": "CloudAPI",
+  "version": "1.0.0",
+  "description": "A group project for [Grand Circus](https://www.grandcircus.co/bootcamps/) Front-End Bootcamp. CloudAPI is an API management solution where developers enrolled in Grand Circus can easily access to assist with familiarizing navigation through API databases and can be found on the Grand Circus bootcamp resource list.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd backend && npm install",
+    "start": "cd backend && npm run start"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenderson54/CloudApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shenderson54/CloudApi/issues"
+  },
+  "homepage": "https://github.com/shenderson54/CloudApi#readme"
+}
