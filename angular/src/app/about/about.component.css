@@ -48,4 +48,23 @@
  .section { 
     margin: 20px;
  }
- 
+ .misc-buttons {
+   border: 2px solid rgb(92, 83, 83);
+   position: relative;
+   background: linear-gradient(90deg, transparent, #ffffff);
+    /*overflow: hidden; */
+    filter: hue-rotate(0deg); 
+    transition: all 0.1s linear; 
+    border-radius: 4px; 
+    cursor: pointer; 
+ } 
+
+ @media only print {
+    app-page-header,
+    .misc-buttons{
+       display: none;
+    }
+    body{
+       margin: 5px;   
+       }
+ }
