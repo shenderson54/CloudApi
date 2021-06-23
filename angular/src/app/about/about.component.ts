@@ -15,5 +15,7 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void { }
   
   results: Interface[] | null = null;
-
+printPage(){
+  window.print();
+}
 }
